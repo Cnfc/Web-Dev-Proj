@@ -1,1 +1,43 @@
-* color: green;
+html{
+  height: 100%;
+  background: radial-gradient(circle, #fff, #ccc);
+
+}
+.container {
+  height: 400px;
+  width: 550px;
+  background-color: #9DD2EA;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0px 0px #009de4;
+  position: relative;
+}
+
+
+.score{
+  background-color: #F1FF92;
+  color: #888E5F;
+  padding: 5px;
+  position: absolute;
+  left: 500px;
+  box-shadow: 0px 2px 0px 0px #9da853;
+}
+
+.correct{
+  position: absolute;
+  left: 260px;
+  background-color: #42e252;
+  color: white;
+  padding: 11px;
+  display: none;
+}
+
+.wrong{
+  position: absolute;
+  left: 250px;
+  background-color: #de401a;
+  color: white;
+  padding: 11px;
+  display: none;
+}
