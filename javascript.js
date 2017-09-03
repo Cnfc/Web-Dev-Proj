@@ -2,6 +2,7 @@ var playing = false;
 var score;
 var action;
 var timeremaining;
+var correctAnswer
 
   document.getElementById("startreset").onclick = function () {
     if (playing == true) {
@@ -12,7 +13,7 @@ var timeremaining;
       document.getElementById('scorevalue').innerHTML = score;
       //show coundown box
       show("timeremaining");
-      timeremaining = 2;
+      timeremaining = 10;
       document.getElementById('timeremainingvalue').innerHTML = timeremaining;
       //change button to reset
       document.getElementById('startreset').innerHTML = "Reset Game";
@@ -29,7 +30,7 @@ function startCountdown() {
     if(timeremaining == 0){
       stopCountdown();
       show("gameover");
-      document.getElementById('gameover').innerHTML = "<p>Game Over !</p><p>You score is " + score +".</p>";
+      document.getElementById('gameover').innerHTML = "<p>Game Over !</p><p>You score is  " + score +".</p>";
       hide("timeremaining");
       hide("correct");
       hide("wrong");
@@ -54,5 +55,24 @@ function show(Id) {
 }
 // generateQA
 function generateQA(){
+  var x = 1+ Math.round(9*Math.random());
+  var y = 1+ Math.round(9*Math.random());
+  correctAnswer = x*y;
+  document.getElementById("question").innerHTML = x + "x" + y;
+  var correctPosition = 1+Math.round(3 * Math.random());
+  document.getElementById("box"+correctPosition).innerHTML = correctAnswer;
 
+
+//fill other boxes
+  var answers = correctAnswer
+  for(i = 1; i<5; i++) {
+    if(i !== correctPosition) {
+      var wrongAnswer;
+      do{ wrongAnswer = (1+ Math.round(9*Math.random()))*(1+ Math.round(9*Math.random()));
+      }while(wrongAnswer == correctAnswer){
+
+      }
+        document.getElementById("box"+i).innerHTML = wrongAnswer;
+    }
+  }
 }
