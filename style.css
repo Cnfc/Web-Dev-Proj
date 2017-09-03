@@ -93,21 +93,23 @@ html{
 .box4{
   margin-right: 0;
 }
-.box:hover{
+
+.box:hover, .startreset:hover{
   background-color: #9C89F6;
   color: white;
   box-shadow: 1px 4px #6b54d3;
 }
-.box:active{
+
+.box:active, .startreset:active {
   box-shadow: 0px 0px #6b54d3;
   top: 4px;
 }
+
 .startreset{
-  width: 85px;
-  height: 85px;
-  background-color: white;
-  float: left;
-  margin-right: 36px;
+  width: 78px;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.5);
+  margin: 0 auto;
   border-radius: 3px;
   cursor: pointer;
   box-shadow: 2px 4px rgba(0, 0, 0, 0.2);
@@ -117,4 +119,17 @@ html{
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   -moz-transition: all 0.2s;
+}
+
+.timeremaining{
+  width: 160px;
+  padding: 10px;
+  position: absolute;
+  top: 385px;
+  left: 400px;
+  background-color: rgba(181, 235, 36, 0.8);
+  border-radius: 3px;
+  box-shadow: 1px 4px rgba(0, 0, 0, 0.2);
+  /* visibility: hidden; */
+  display: none;
 }
