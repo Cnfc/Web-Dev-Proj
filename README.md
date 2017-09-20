@@ -1,3 +1,3 @@
 # Web-Dev-Proj
-Some practice with html & css
+My practice.
 Project: Maths Game (HTML, CSS & JavaScript);

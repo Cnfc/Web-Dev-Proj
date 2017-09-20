@@ -62,7 +62,7 @@ function startCountdown() {
       document.getElementById('gameover').innerHTML = "<p>Game Over !</p><p>You score is  " + score +".</p>";
       hide("timeremaining");
       hide("correct");
-      hide("wrong");
+      hide('wrong');
       playing = false;
       document.getElementById('startreset').innerHTML = "Start Game"
 
