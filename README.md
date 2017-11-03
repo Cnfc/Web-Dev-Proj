@@ -1,2 +1,2 @@
-My practice.
+My practice. Very simple game
 Project: Maths Game (HTML, CSS & JavaScript);
