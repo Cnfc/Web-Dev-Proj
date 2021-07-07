@@ -1,2 +1,2 @@
-# Web-Dev-Proj
-Some prictise with html & css
+My practice. Very simple game
+Project: Maths Game (HTML, CSS & JavaScript);
